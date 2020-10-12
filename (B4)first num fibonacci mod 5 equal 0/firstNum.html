@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị fibonacci đầu tiên chia hết cho 5</title>
+</head>
+<body onload="showFibonacci()">
+<script>
+    function showFibonacci()
+    {
+        let count = 0;
+        let a = 1;
+        let b = 1;
+        let c;
+        do{
+            c = a + b;
+            a = b;
+            b = c;
+            count++;
+            if(c  % 5 == 0){
+                alert(c);
+                break;
+            }
+        }while(1);
+    }
+</script>
+</body>
+</html>

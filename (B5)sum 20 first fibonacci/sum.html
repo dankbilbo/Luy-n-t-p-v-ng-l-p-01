@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 20 fibonacci đầu tiên</title>
+</head>
+<body onload="sumFibo()">
+<script>
+    function sumFibo(){
+        let a = 1;
+        let b = 1;
+        let c;
+        let sum = 2
+        let count = 1;
+        while (count < 20) {
+            c = a + b;
+            a = b;
+            b = c;
+            sum += c;
+            count++;
+            console.log("count la" + count)
+        }
+        alert(sum);
+    }
+</script>
+</body>
+</html>

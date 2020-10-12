@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị fibonacci</title>
+</head>
+<body onload="showFibonacci()">
+<script>
+    function showFibonacci()
+    {
+        let count = 1;
+        let a = 1;
+        let b = 1;
+        let c;
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+        do{
+            c = a + b;
+            a = b;
+            b = c;
+            document.write(c + "<br>");
+            count++;
+        }while(count < 20);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đoán số</title>
+</head>
+<body >
+<button onclick="guess()" id="play">PLAY</button>
+<script>
+    function guess(){
+        var range = +prompt("Nhap khoang so muon doan");
+        var num = Math.floor(Math.random() * range);
+        let count  = 0;
+        do{
+            var guessingNum = +prompt("Nhap so muon doan");
+            if (guessingNum == num) {
+                alert("dung roi do");
+            } else if(guessingNum > num){
+                alert("sai roi. chon lai so nho hon di");
+            }else{
+                alert("sai roi. chon lai so lon hon di")
+            }
+            count++;
+            if(count == 3){
+                alert("da het luot choi");
+            }
+        }while (guessingNum != num && count  < 3);
+    }
+</script>
+</body>
+</html>
